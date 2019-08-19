@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es6": false,
+    "node": true,
+    "jquery": false
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "arrow-spacing": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-duplicate-imports": "error",
+    "no-extra-boolean-cast": "warn",
+    "no-useless-rename": "error",
+    "no-var": "error",
+    "prefer-const": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ],
+    "rest-spread-spacing": ["error", "never"],
+    "yoda": ["error", "always"]
+  }
+}
