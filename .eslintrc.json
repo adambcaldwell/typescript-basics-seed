@@ -5,15 +5,19 @@
     "node": true,
     "jquery": false
   },
-  "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2015
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
   "plugins": ["prettier"],
   "rules": {
     "arrow-spacing": "error",
-    "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-duplicate-imports": "error",
     "no-extra-boolean-cast": "warn",
     "no-useless-rename": "error",
